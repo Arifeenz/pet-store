@@ -57,24 +57,49 @@
       cursor: pointer;
     }
     .product-card img {
-      max-width: 100%;
-      border-radius: 10px;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
     }
     .product-card.cat:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
     }
-    .contact, .about {
-      background-color: #ffeef2;
-      border-radius: 10px;
-      padding: 2rem;
-      margin-top: 2rem;
+    .product-card button {
+      margin-top: 0.5rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .features li::before {
+      content: "🐾 ";
+    }
+    blockquote {
+      background: #ffeef2;
+      padding: 1rem;
+      border-left: 4px solid #ff69b4;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      font-style: italic;
     }
     footer {
       text-align: center;
       padding: 2rem;
       background: #ffd1dc;
       color: #333;
+    }
+    footer a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 0.5rem;
     }
     @media (max-width: 768px) {
       .products {
@@ -97,7 +122,8 @@
 
   <nav>
     <a href="#products">สินค้า</a>
-    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#features">จุดเด่น</a>
+    <a href="#reviews">รีวิว</a>
     <a href="#contact">ติดต่อ</a>
   </nav>
 
@@ -108,21 +134,25 @@
         <img src="images/premium-cat-food.png" alt="อาหารแมวพรีเมียม">
         <h3>อาหารแมวพรีเมียม</h3>
         <p>฿250</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/fluffy-cat-bed.png" alt="ที่นอนแมว">
         <h3>ที่นอนแมวขนนุ่ม</h3>
         <p>฿400</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/kitten-food.png" alt="อาหารลูกแมว">
         <h3>อาหารลูกแมว</h3>
         <p>฿220</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-teaser-toy.png" alt="ของเล่นแมว">
         <h3>ของเล่นแมวล่อแมว</h3>
         <p>฿120</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
     </div>
 
@@ -132,54 +162,71 @@
         <img src="images/wet-cat-food.png" alt="อาหารเปียกแมว">
         <h3>อาหารเปียกแมว</h3>
         <p>฿70</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-litter-box.png" alt="กระบะทรายแมว">
         <h3>กระบะทรายแมว</h3>
         <p>฿300</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/auto-cat-feeder.png" alt="ที่ให้อาหารแมวอัตโนมัติ">
         <h3>เครื่องให้อาหารอัตโนมัติ</h3>
         <p>฿650</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-brush-soft.png" alt="แปรงขนแมว">
         <h3>แปรงขนนุ่ม</h3>
         <p>฿110</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-bow-collar.png" alt="ปลอกคอแมว">
         <h3>ปลอกคอแมวลายโบว์</h3>
         <p>฿95</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-blanket-cute.png" alt="ผ้าห่มแมว">
         <h3>ผ้าห่มแมวลายการ์ตูน</h3>
         <p>฿150</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-condo-wood.png" alt="คอนโดแมว">
         <h3>คอนโดแมวไม้</h3>
         <p>฿950</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
       <div class="product-card cat">
         <img src="images/cat-scratch-pad.png" alt="พรมลับเล็บแมว">
         <h3>พรมลับเล็บแมว</h3>
         <p>฿180</p>
+        <button onclick="window.open('https://lin.ee/yourlineid')">📦 สอบถามทาง LINE</button>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>📌 เกี่ยวกับเรา</h2>
-    <p>
-      เราคือร้านสำหรับคนรักแมวตัวจริง! คัดสรรอาหาร ของใช้ และของเล่นคุณภาพ
-      เพื่อสุขภาพและความสุขของน้องเหมียว 🐾
-    </p>
+  <section id="features" class="features">
+    <h2>🎀 ทำไมลูกค้าถึงเลือกเรา?</h2>
+    <ul>
+      <li>สินค้าแมวคุณภาพ ราคาน่ารัก</li>
+      <li>ส่งฟรีเมื่อครบ 500 บาท</li>
+      <li>ตอบไว LINE, Facebook ตลอดวัน</li>
+      <li>แพ็คของปลอดภัย พร้อมกล่องสุดคิ้วท์</li>
+    </ul>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="reviews">
+    <h2>🧡 รีวิวจากลูกค้า</h2>
+    <blockquote>“น้องแมวที่บ้านชอบมากกก จะสั่งอีกแน่นอนค่ะ!” — คุณฟ้า</blockquote>
+    <blockquote>“ส่งเร็ว ของดีเหมือนในรูปเป๊ะ!” — คุณปิง</blockquote>
+    <blockquote>“น้องหลับบนที่นอนใหม่ทั้งวันเลยค่ะ ขอบคุณนะคะ!” — คุณจูน</blockquote>
+  </section>
+
+  <section id="contact">
     <h2>📞 ติดต่อร้าน</h2>
     <p>Facebook: PetLover Store</p>
     <p>Line ID: @petlover</p>
@@ -187,27 +234,28 @@
   </section>
 
   <footer>
-    <p>© 2025 PetLover Store. All rights reserved.</p>
+    <p>© 2025 PetLover Store | All rights reserved.</p>
+    <p><a href="#contact">ติดต่อ</a> | <a href="#">นโยบายความเป็นส่วนตัว</a></p>
   </footer>
 
-  <!-- JavaScript สำหรับเสียงแมวและป๊อปอัป -->
   <script>
-  const catMessages = [
-    "หยิบอันนี้ให้เค้าหน่อยนะ~ เหมียว~",
-    "จะซื้อให้เค้ามั้ยน้า~ เค้าจ้องอยู่เลยน้าา 🐾",
-    "ถ้าได้อันนี้ เค้าจะไม่ดื้อเลยนะ เหมียว!",
-    "ซื้อให้เค้าหน่อย เค้าจะรักที่สุดเลย~ ♥"
-  ];
+    const catMessages = [
+      "หยิบอันนี้ให้เค้าหน่อยนะ~ เหมียว~",
+      "อันนี้นุ่มน่ากอดที่สุดเลย! เค้าชอบ~",
+      "จะซื้อให้เค้ามั้ยน้า~ เค้าจ้องอยู่เลยน้าา 🐾",
+      "ถ้าได้อันนี้ เค้าจะไม่ดื้อเลยนะ เหมียว!",
+      "ซื้อให้เค้าหน่อย เค้าจะรักที่สุดเลย~ ♥"
+    ];
 
-  const catItems = document.querySelectorAll(".product-card.cat");
+    const catItems = document.querySelectorAll(".product-card.cat");
 
-  catItems.forEach(item => {
-    item.addEventListener("click", () => {
-      const randomMsg = catMessages[Math.floor(Math.random() * catMessages.length)];
-      alert("น้องแมวพูดว่า...\n\n" + randomMsg);
+    catItems.forEach(item => {
+      item.addEventListener("click", () => {
+        const randomMsg = catMessages[Math.floor(Math.random() * catMessages.length)];
+        alert("น้องแมวพูดว่า...\n\n" + randomMsg);
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
