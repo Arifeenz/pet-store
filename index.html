@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetLover Store - ร้านแมวแสนรัก</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+      cursor: url('https://cur.cursors-4u.net/animals/ani-5/ani420.cur'), auto;
+    }
+    header {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background: #fff;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ff69b4;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff69b4;
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .product-card.cat:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+    }
+    .contact, .about {
+      background-color: #ffeef2;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ffd1dc;
+      color: #333;
+    }
+    @media (max-width: 768px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 PetLover Store 🐱</h1>
+    <p>ร้านขายอาหารและอุปกรณ์สำหรับน้องแมวสุดน่ารัก</p>
+  </header>
+
+  <nav>
+    <a href="#products">สินค้า</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#contact">ติดต่อ</a>
+  </nav>
+
+  <section id="products">
+    <h2>🌟 สินค้าขายดี</h2>
+    <div class="products">
+      <div class="product-card cat">
+        <img src="images/premium-cat-food.png" alt="อาหารแมวพรีเมียม">
+        <h3>อาหารแมวพรีเมียม</h3>
+        <p>฿250</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/fluffy-cat-bed.png" alt="ที่นอนแมว">
+        <h3>ที่นอนแมวขนนุ่ม</h3>
+        <p>฿400</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/kitten-food.png" alt="อาหารลูกแมว">
+        <h3>อาหารลูกแมว</h3>
+        <p>฿220</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-teaser-toy.png" alt="ของเล่นแมว">
+        <h3>ของเล่นแมวล่อแมว</h3>
+        <p>฿120</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 4rem;">🐱 สินค้าอื่นๆ</h2>
+    <div class="products">
+      <div class="product-card cat">
+        <img src="images/wet-cat-food.png" alt="อาหารเปียกแมว">
+        <h3>อาหารเปียกแมว</h3>
+        <p>฿70</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-litter-box.png" alt="กระบะทรายแมว">
+        <h3>กระบะทรายแมว</h3>
+        <p>฿300</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/auto-cat-feeder.png" alt="ที่ให้อาหารแมวอัตโนมัติ">
+        <h3>เครื่องให้อาหารอัตโนมัติ</h3>
+        <p>฿650</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-brush-soft.png" alt="แปรงขนแมว">
+        <h3>แปรงขนนุ่ม</h3>
+        <p>฿110</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-bow-collar.png" alt="ปลอกคอแมว">
+        <h3>ปลอกคอแมวลายโบว์</h3>
+        <p>฿95</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-blanket-cute.png" alt="ผ้าห่มแมว">
+        <h3>ผ้าห่มแมวลายการ์ตูน</h3>
+        <p>฿150</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-condo-wood.png" alt="คอนโดแมว">
+        <h3>คอนโดแมวไม้</h3>
+        <p>฿950</p>
+      </div>
+      <div class="product-card cat">
+        <img src="images/cat-scratch-pad.png" alt="พรมลับเล็บแมว">
+        <h3>พรมลับเล็บแมว</h3>
+        <p>฿180</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>📌 เกี่ยวกับเรา</h2>
+    <p>
+      เราคือร้านสำหรับคนรักแมวตัวจริง! คัดสรรอาหาร ของใช้ และของเล่นคุณภาพ
+      เพื่อสุขภาพและความสุขของน้องเหมียว 🐾
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📞 ติดต่อร้าน</h2>
+    <p>Facebook: PetLover Store</p>
+    <p>Line ID: @petlover</p>
+    <p>โทร: 099-999-9999</p>
+  </section>
+
+  <footer>
+    <p>© 2025 PetLover Store. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript สำหรับเสียงแมวและป๊อปอัป -->
+  <script>
+  const catMessages = [
+    "หยิบอันนี้ให้เค้าหน่อยนะ~ เหมียว~",
+    "จะซื้อให้เค้ามั้ยน้า~ เค้าจ้องอยู่เลยน้าา 🐾",
+    "ถ้าได้อันนี้ เค้าจะไม่ดื้อเลยนะ เหมียว!",
+    "ซื้อให้เค้าหน่อย เค้าจะรักที่สุดเลย~ ♥"
+  ];
+
+  const catItems = document.querySelectorAll(".product-card.cat");
+
+  catItems.forEach(item => {
+    item.addEventListener("click", () => {
+      const randomMsg = catMessages[Math.floor(Math.random() * catMessages.length)];
+      alert("น้องแมวพูดว่า...\n\n" + randomMsg);
+    });
+  });
+</script>
+
+</body>
+</html>
